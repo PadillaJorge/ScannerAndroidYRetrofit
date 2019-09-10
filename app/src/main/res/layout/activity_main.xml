@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imageView"
+
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="96dp"
+        android:src="@drawable/scan"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:backgroundTint="#E6C229"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="#D11149"
+        android:ems="10"
+        android:background="@drawable/shape"
+        android:textColor="#3D2645"
+        android:inputType="textPersonName"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/txtBanda"
+        android:background="@drawable/shape"
+        android:textColorHint="#D11149"
+        android:backgroundTint="#E6C229"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtNombre"
+        android:layout_marginTop="20dp"
+        android:textColor="#3D2645"
+        android:textAlignment="center"
+        android:hint="Banda"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapWords"
+        />
+
+    <EditText
+        android:id="@+id/txtano"
+        android:background="@drawable/shape"
+        android:textColorHint="#D11149"
+        android:backgroundTint="#E6C229"
+        android:layout_below="@+id/txtBanda"
+        android:layout_marginTop="20dp"
+        android:hint="Año"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3D2645"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/txtGenero"
+        android:background="@drawable/shape"
+        android:textColorHint="#D11149"
+        android:backgroundTint="#E6C229"
+        android:layout_below="@+id/txtano"
+        android:layout_marginTop="20dp"
+        android:hint="Genero"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3D2645"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapWords"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        android:background="@drawable/shape"/>
+
+    />
+
+
+
+</RelativeLayout>
